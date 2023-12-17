@@ -45,6 +45,14 @@
       line-height: 16px;
       margin-top: 7px;
     }
+    &-pointer {
+      width: 18px;
+      height: 20px;
+      position: absolute;
+      left: 135px;
+      bottom: 20px;
+      opacity: 0.4;
+    }
     &:hover {
       background-color: $main-color;
       transform: scale(1.05);
