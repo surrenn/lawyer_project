@@ -1,0 +1,17 @@
+.title {
+  color: $title-color;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-align: center;
+  &__left {
+    text-align: left;
+    span {
+      color: $main-color;
+      font-size: 28px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+}

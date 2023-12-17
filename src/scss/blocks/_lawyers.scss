@@ -1,0 +1,94 @@
+.lawyers {
+  padding: 80px 0;
+  min-height: 740px;
+  background-color: #f7f7f7;
+  &__descr {
+    margin-top: 25px;
+    margin: 25px auto 0 auto;
+    width: 920px;
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  &__wrapper {
+    margin-top: 50px;
+  }
+  &__item {
+    position: relative;
+    width: 312px;
+    height: 415px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    &-front,
+    &-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+      transition: all 0.6s;
+      box-shadow: 1px 1px 15px gainsboro;
+    }
+    &-front {
+      transform: perspective(1000px) rotateY(0deg);
+      background-color: #fff;
+      z-index: 2;
+    }
+    &-back {
+      padding: 84px 20px;
+      background-color: #fff;
+      transform: perspective(1000px) rotateY(180deg);
+    }
+    &-photo {
+      width: 312px;
+      height: 320px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &-name {
+      color: #222;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      margin-top: 25px;
+    }
+    &-descr {
+      color: #222;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      text-transform: lowercase;
+      margin-top: 10px;
+    }
+    &-text {
+      margin-top: 40px;
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    &-exp {
+      margin-top: 40px;
+      color: #222;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+    }
+    &:hover &-front {
+      transform: perspective(1000px) rotateY(-180deg);
+    }
+    &:hover &-back {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+}

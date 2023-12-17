@@ -1,0 +1,91 @@
+.clients {
+  padding: 80px 0;
+  background: url("../img/second_bg.png") center center/cover no-repeat;
+  min-height: 590px;
+  &__titleblock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 635px;
+    min-height: 245px;
+    padding: 32px 32px;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px #dcdcdc;
+    &-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-img {
+      height: 80px;
+      width: 80px;
+      img {
+        width: 100%;
+      }
+    }
+    &-nameblock {
+      width: 400px;
+      min-height: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &-name {
+      color: #222;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    &-company {
+      color: #222;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+    }
+    &-icon {
+      width: 55px;
+      height: 55px;
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      margin-top: 15px;
+      color: #222;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      p {
+        margin: 0;
+      }
+    }
+  }
+  &__btns {
+    margin-top: 50px;
+  }
+  &__btn {
+    margin-right: 25px;
+  }
+}
+
+.slidercontrol__buttons {
+  .slidercontrol-left_arr-blue,
+  .slidercontrol-right_arr-blue {
+    path {
+      fill: $main-color;
+    }
+  }
+  .middle_stick-blue {
+    background-color: $main-color;
+  }
+}

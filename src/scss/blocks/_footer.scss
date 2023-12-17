@@ -1,0 +1,155 @@
+footer {
+  min-height: 535px;
+  background-color: #222;
+  padding: 80px 0;
+}
+
+.footer {
+  &__top {
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin: 0;
+  }
+  &__descr {
+    width: 862px;
+    color: #f8f5f4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: lowercase;
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__contacts {
+    min-width: 420px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 140px;
+    &-link {
+      display: flex;
+      align-items: center;
+    }
+    &-box {
+      margin-right: 25px;
+      width: 55px;
+      height: 55px;
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+    &-title {
+      color: #8c8c8c;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+    }
+    &-info {
+      a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-decoration: none;
+      }
+    }
+  }
+  &__nav {
+    min-width: 312px;
+    min-height: 182px;
+  }
+  &__menu {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-right: 25px;
+    &-link {
+      margin-bottom: 9px;
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+  &__question {
+    width: 425px;
+    &-header {
+      display: flex;
+    }
+    &-img {
+      width: 65px;
+      height: 65px;
+      margin-right: 25px;
+      img {
+        width: 100%;
+      }
+    }
+    &-name {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    &-job {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    &-text {
+      margin-top: 16px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+    &-btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+.after-footer {
+  height: 50px;
+  background-color: #181818;
+  &__wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__rights {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__personal {
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
