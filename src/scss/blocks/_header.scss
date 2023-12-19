@@ -8,6 +8,7 @@
   .upper-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &__contacts {
       width: 340px;
       display: flex;
@@ -49,6 +50,11 @@
   height: 112px;
   background-color: rgba(1, 1, 1, 0.76);
   z-index: 10;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 112px;
+  }
   &__logo {
     color: $main-color;
     font-size: 28px;
@@ -83,5 +89,8 @@
         }
       }
     }
+  }
+  .hamburger {
+    display: none;
   }
 }
