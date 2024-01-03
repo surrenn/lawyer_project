@@ -15,11 +15,17 @@
   &__wrapper {
     margin-top: 50px;
   }
+  &__track {
+    display: grid;
+    grid-template-columns: repeat(4, 312px);
+    column-gap: 15px;
+  }
   &__item {
     position: relative;
     width: 312px;
-    height: 415px;
+    min-height: 415px;
     background-color: #f7f7f7;
+    flex-shrink: 0;
     cursor: pointer;
     &-front,
     &-back {
@@ -38,12 +44,12 @@
       z-index: 2;
     }
     &-back {
-      padding: 84px 20px;
+      padding: 70px 20px;
       background-color: #fff;
       transform: perspective(1000px) rotateY(180deg);
     }
     &-photo {
-      width: 312px;
+      width: 100%;
       height: 320px;
       img {
         height: 100%;
@@ -51,7 +57,8 @@
         object-fit: cover;
       }
     }
-    &-name {
+    &-name,
+    &-backname {
       color: #222;
       text-align: center;
       font-size: 16px;
@@ -59,7 +66,8 @@
       line-height: 19px;
       margin-top: 25px;
     }
-    &-descr {
+    &-descr,
+    &-backdescr {
       color: #222;
       text-align: center;
       font-size: 14px;

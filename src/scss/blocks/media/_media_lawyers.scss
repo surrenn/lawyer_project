@@ -1,0 +1,85 @@
+@media (max-width: 1400px) {
+  .lawyers {
+    &__track {
+      grid-template-columns: repeat(2, 312px);
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .lawyers {
+    padding: 60px 0;
+    min-height: 712px;
+    &__descr {
+      width: 100%;
+    }
+    &__wrapper {
+      margin-top: 20px;
+    }
+    &__list {
+      width: 100%;
+      height: 477px;
+      overflow-x: scroll;
+      padding-top: 30px;
+    }
+    &__track {
+      min-width: 1400px;
+      display: flex;
+    }
+    &__item {
+      width: 300px;
+      &-back {
+        padding: 55px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lawyers {
+    &__list {
+      height: 465px;
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .lawyers {
+    padding: 40px 0;
+    min-height: 607px;
+    &__wrapper {
+      margin-top: 30px;
+    }
+    &__list {
+      height: 390px;
+      padding-top: 20px;
+    }
+    &__track {
+      min-width: 1160px;
+    }
+    &__item {
+      width: 250px;
+      min-height: 350px;
+      &-photo {
+        height: 235px;
+      }
+      &-back {
+        padding: 24px 20px;
+      }
+      &-name {
+        width: 218px;
+        margin: 15px auto 0 auto;
+      }
+      &-backname {
+        margin-top: 15px;
+      }
+      &-text,
+      &-exp {
+        margin-top: 20px;
+      }
+    }
+  }
+}
