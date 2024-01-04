@@ -13,6 +13,8 @@
   }
   &__wrapper {
     margin-top: 50px;
+  }
+  &__track {
     display: flex;
     justify-content: space-between;
   }
@@ -26,7 +28,7 @@
     }
     &-img {
       position: relative;
-      width: 425px;
+      width: 100%;
       height: 270px;
       cursor: pointer;
       .photo {
