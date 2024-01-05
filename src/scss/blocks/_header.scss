@@ -70,26 +70,6 @@
     line-height: 13px;
     text-transform: lowercase;
   }
-  .navigation {
-    width: 670px;
-    margin-top: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    float: right;
-    li {
-      a {
-        color: #fff;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 21px;
-        &:hover {
-          color: $main-color;
-        }
-      }
-    }
-  }
   .hamburger {
     display: none;
   }

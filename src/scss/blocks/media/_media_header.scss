@@ -1,18 +1,3 @@
-@media (max-width: 1200px) {
-  header {
-    .subheader {
-      .navigation {
-        width: 580px;
-        &__item {
-          a {
-            font-size: 17px;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (max-width: 992px) {
   header {
     .subheader {
@@ -28,9 +13,6 @@
       }
       &__official {
         font-size: 16px;
-      }
-      .navigation {
-        display: none;
       }
       .hamburger {
         position: absolute;
