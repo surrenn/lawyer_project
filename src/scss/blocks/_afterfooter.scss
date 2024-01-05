@@ -1,0 +1,26 @@
+.after-footer {
+  min-height: 50px;
+  background-color: #181818;
+  &__wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__rights {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__personal {
+    a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
