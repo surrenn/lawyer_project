@@ -1,0 +1,28 @@
+@media (max-width: 1400px) {
+  .wrapper {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper {
+    width: 100%;
+    padding-right: 0;
+    padding-left: calc(((100% - 720px) / 2) + 15px);
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding-left: calc(((100% - 540px) / 2) + 15px);
+  }
+}
+@media (max-width: 576px) {
+  .wrapper {
+    padding-left: 15px;
+  }
+}

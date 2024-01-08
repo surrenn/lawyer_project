@@ -27,6 +27,9 @@
     &__track {
       min-width: 1400px;
       display: flex;
+      gap: 0;
+      justify-content: flex-start;
+      column-gap: 25px;
     }
     &__item {
       width: 300px;

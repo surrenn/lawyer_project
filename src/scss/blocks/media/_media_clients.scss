@@ -60,9 +60,6 @@
   }
 }
 
-@media (max-width: 768px) {
-}
-
 @media (max-width: 576px) {
   .clients {
     min-height: 580px;
@@ -72,6 +69,7 @@
     }
     &__wrapper {
       margin-top: 15px;
+      padding: 0;
     }
     &__list {
       height: 325px;
@@ -113,7 +111,4 @@
       }
     }
   }
-}
-
-@media (max-width: 390px) {
 }
